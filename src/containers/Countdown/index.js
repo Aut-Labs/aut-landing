@@ -430,7 +430,7 @@ const Countdown = () => {
                     color="white"
                     fontSize="24px"
                   >
-                    Opt out of a system that doesn’t represent you
+                    Measure the True Value of your Participation.
                   </Typography>
                 </motion.div>
               </div>

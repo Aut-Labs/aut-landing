@@ -21,7 +21,7 @@ export const NavbarData = {
     //   label: "X",
     //   staticLink: true,
     //   target: "_blank",
-    //   path: "https://twitter.com/opt_aut",
+    //   path: "https://x.com/aut_foundation",
     // },
     // {
     //   label: "Discord",
@@ -858,8 +858,7 @@ export const AboutData = {
 // FOOTER data section
 /* ------------------------------------ */
 import footerDiscord from "common/assets/image/discord-social.svg";
-import footerTwitter from "common/assets/image/twitter-social.svg";
-import footerDocs from "common/assets/image/docs.svg";
+import footerX from "common/assets/image/x-social.svg";
 import footerMirror from "common/assets/image/mirror-logo.svg";
 
 export const FooterData = {
@@ -1002,7 +1001,7 @@ export const FooterData = {
           id: 4,
           title: "Twitter",
           target: "_blank",
-          link: "https://twitter.com/opt_aut",
+          link: "https://x.com/aut_foundation",
         },
 
         // {
@@ -1049,9 +1048,9 @@ export const FooterData = {
   ],
   social: [
     {
-      link: "https://twitter.com/opt_aut",
-      icon: footerTwitter,
-      name: "Twitter",
+      link: "https://x.com/aut_foundation",
+      icon: footerX,
+      name: "X",
     },
     {
       link: "https://aut.mirror.xyz",

@@ -61,8 +61,8 @@ const WhiteBG = () => {
   return (
     <>
       <motion.path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         transition={{ stiffness: 1000 }}
         style={{
           scale: scale,

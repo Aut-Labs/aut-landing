@@ -106,7 +106,7 @@ const BlackScreen = () => {
           id="arrow"
           d="M14 20l-4-4m4 4l4-4m-4 4V10"
           stroke="#F0F5FF"
-          stroke-width="2"
+          strokeWidth="2"
           fill="none"
         />
         <defs>
@@ -117,9 +117,9 @@ const BlackScreen = () => {
             width="28"
             height="36"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

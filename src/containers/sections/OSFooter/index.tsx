@@ -1,7 +1,7 @@
 import React, { memo, useContext, useEffect, useRef } from "react";
 import AutOSLogo from "common/assets/AutOSLogoV2.svg";
-import DiscordLogo from "common/assets/image/discord-icon.svg";
-import XLogo from "common/assets/image/twitter-icon.svg";
+import DiscordLogo from "common/assets/image/discord-social.svg";
+import XLogo from "common/assets/image/x-social.svg";
 import Container from "common/components/Container";
 import Tooltip from "rc-tooltip";
 import "rc-tooltip/assets/bootstrap.css";
@@ -20,11 +20,10 @@ import {
 } from "./footer.style";
 import { motionValue, useScroll, useTransform } from "framer-motion";
 import Box from "common/components/Box";
-import { margin, marginTop } from "styled-system";
 
 const socials = [
   {
-    link: "https://twitter.com/opt_aut",
+    link: "https://x.com/aut_foundation",
     icon: XLogo,
     name: "X",
   },
