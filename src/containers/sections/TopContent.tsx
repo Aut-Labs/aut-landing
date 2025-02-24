@@ -142,9 +142,9 @@ const TopContent = () => {
                   md: "0px",
                 }}
               >
-                The Social Network for Web3 value contributors. <br />
-                Manage & monetize your on-chain Interactions, <br />
-                Identity & Reputation in one place.
+                ĀutOS is your gateway to the Participation Economy. <br />
+                Measure & monetize the value you have for your peers,
+                <br /> and connect with others based on the on-chain actions you share.
               </Typography>
             </motion.div>
           </Box>
@@ -158,15 +158,15 @@ const TopContent = () => {
             }}
             mb={{ _: "6", sm: "12" }}
           >
-           
-               <motion.div
-                style={stylesWithCssVar({
-                  opacity,
-                  x: translateX,
-                })}
-              >
-                 <Link href={'https://os.aut.id'} target="_self">
-                 <Button
+
+            <motion.div
+              style={stylesWithCssVar({
+                opacity,
+                x: translateX,
+              })}
+            >
+              <Link href={'https://os.aut.id'} target="_self">
+                <Button
                   title="Enter Āut/OS"
                   variant="roundOutlined"
                   className="gradient"
@@ -174,9 +174,9 @@ const TopContent = () => {
                   size="normal"
                   colors="primary"
                 />
-                 </Link>
-              
-              </motion.div>
+              </Link>
+
+            </motion.div>
           </Box>
           {/* Button end */}
           <motion.div

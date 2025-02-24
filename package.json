@@ -49,6 +49,7 @@
     "styled-system": "5.1.5"
   },
   "devDependencies": {
+    "@types/node": "22.13.5",
     "@types/react": "18.2.38",
     "@types/styled-system": "^5.1.22",
     "@types/styled-system__theme-get": "^5.0.4",

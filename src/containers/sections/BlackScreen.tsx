@@ -73,7 +73,7 @@ const BlackScreen = () => {
             })}
           >
             <Typography color="white" as="subtitle1" textAlign="center">
-              Opt out of a system that doesn&apos;t represent you.
+              Measure the True Value of your Participation.
             </Typography>
           </motion.div>
         </Box>
