@@ -1,43 +1,32 @@
-FROM node:alpine as builder
-
-
+# Stage 1: Build the application
+FROM node:alpine AS builder
 WORKDIR /usr/app
+ENV NODE_OPTIONS="--openssl-legacy-provider"
 
-ENV NODE_OPTIONS=--openssl-legacy-provider
+# Install build dependencies
+RUN apk --no-cache add automake g++ make bash git alpine-sdk nasm autoconf build-base zlib zlib-dev libpng libpng-dev libwebp libwebp-dev libjpeg-turbo libjpeg-turbo-dev
 
-RUN apk --update --no-cache \
-    add  \
-    automake \
-    g++ \
-    make \
-    bash \
-    git \
-    alpine-sdk  \
-    nasm  \
-    autoconf  \
-    build-base \
-    zlib \
-    zlib-dev \
-    libpng \
-    libpng-dev\
-    libwebp \
-    libwebp-dev \
-    libjpeg-turbo \
-    libjpeg-turbo-dev \
-    &&  rm -fr /var/cache/apk/*
-
-COPY ./package*.json ./
-
-RUN npm install --global pm2
+# Copy only package files first to leverage Docker cache
+COPY package*.json ./
 RUN npm install --force
 
-COPY ./ ./
-
+# Copy the rest of the source and build the app
+COPY . ./
 RUN npm run build
-RUN chmod -R 777 /usr/app
-# PORT 3000 is used internally by nginx (see /nginx/default.conf)
-EXPOSE 3000
-USER node
 
-# Launch app with PM2
-CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
+# Stage 2: Production image
+FROM node:alpine
+WORKDIR /usr/app
+
+# Copy the built files and dependencies from builder
+COPY --from=builder /usr/app ./
+
+# Ensure non-root permissions for security
+RUN chown -R node:node /usr/app
+
+# Expose the Next.js server port
+EXPOSE 3000
+
+# Switch to non-root user and start the server
+USER node
+CMD ["npm", "start"]
