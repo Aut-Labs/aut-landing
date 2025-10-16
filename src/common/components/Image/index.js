@@ -18,8 +18,8 @@ const ImageWrapper = styled("figure")`
   ${themed('Image')}
 `;
 
-const Image = ({ src, alt, ...props }) => (
-  <ImageWrapper {...props}>
+const Image = ({ src, alt, m = 0, ...props }) => (
+  <ImageWrapper m={m} {...props}>
     <NextImage width="100%" height="100%" src={src} alt={alt} />
   </ImageWrapper>
 );
@@ -29,8 +29,4 @@ export default Image;
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-};
-
-Image.defaultProps = {
-  m: 0,
 };

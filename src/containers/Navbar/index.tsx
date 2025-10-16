@@ -61,7 +61,19 @@ const logoStyles = {
   },
 };
 
-const Navbar = ({ row, menuWrapper }) => {
+const Navbar = ({ 
+  row = {
+    flexBox: true,
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: "100%",
+  }, 
+  menuWrapper = {
+    flexBox: true,
+    alignItems: "center",
+    justifyContent: "space-between",
+  } 
+}) => {
   const { state, dispatch }: any = useContext(DrawerContext);
   const { menuItems, logo, logoWhite } = NavbarData;
 
@@ -184,20 +196,6 @@ Navbar.propTypes = {
   button: PropTypes.object,
   row: PropTypes.object,
   menuWrapper: PropTypes.object,
-};
-
-Navbar.defaultProps = {
-  row: {
-    flexBox: true,
-    alignItems: "center",
-    justifyContent: "space-between",
-    width: "100%",
-  },
-  menuWrapper: {
-    flexBox: true,
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
 };
 
 export default Navbar;

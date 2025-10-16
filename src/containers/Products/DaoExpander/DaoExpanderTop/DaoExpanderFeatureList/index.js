@@ -63,41 +63,4 @@ DaoExpanderFeatureListSection.propTypes = {
   featureDescription: PropTypes.object,
 };
 
-// ProductListSection default style
-DaoExpanderFeatureListSection.defaultProps = {
-  row: {
-    flexBox: true,
-    flexWrap: "wrap",
-    display: "flex",
-    justifyContent: "center",
-  },
-  // ProductListSection col default style
-  col: {
-    width: [1, 1, 1 / 2, 1 / 3, 1 / 3],
-  },
-  // ProductListSection block wrapper default style
-  blockWrapperStyle: {
-    p: ["30px", "20px", "20px", "20px"],
-  },
-
-  // ProductListSection content default style
-  contentStyle: {
-    textAlign: "center",
-  },
-  // ProductListSection title default style
-  featureTitle: {
-    fontWeight: "400",
-    color: "#fff",
-    lineHeight: "1.5",
-    mb: ["10px", "10px", "10px", "10px"],
-    letterSpacing: "-0.025em",
-    mt: ["10px", "10px", "10px", "10px"],
-  },
-  // ProductListSection description default style
-  featureDescription: {
-    lineHeight: "1.6",
-    color: "#fff",
-  },
-};
-
 export default DaoExpanderFeatureListSection;

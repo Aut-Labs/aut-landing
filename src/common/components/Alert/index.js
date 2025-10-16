@@ -35,6 +35,4 @@ Alert.propTypes = {
   children: PropTypes.element,
 };
 
-Alert.defaultProps = {};
-
 export default Alert;

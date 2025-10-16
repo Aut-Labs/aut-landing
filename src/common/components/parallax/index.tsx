@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import { useWindowSize } from "react-use";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const mapRange = (
   in_min: number,
@@ -19,8 +22,8 @@ export default function Parallax({
   id = "parallax",
   position,
 }: any) {
-  const trigger = useRef<any>();
-  const target = useRef<any>();
+  const trigger = useRef<any>(null);
+  const target = useRef<any>(null);
 
   const { width: windowWidth } = useWindowSize();
 

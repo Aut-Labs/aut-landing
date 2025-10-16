@@ -16,6 +16,7 @@ const Tooltip = ({
   triggerStyle,
   message,
   children,
+  isChecked = false,
   ...props
 }) => {
   // tooltip local state
@@ -88,11 +89,6 @@ Tooltip.propTypes = {
 
   /** Set tooltip position left || right || top || bottom. */
   position: PropTypes.oneOf(['left', 'right', 'top', 'bottom']),
-};
-
-/** Tooltip default proptype */
-Tooltip.defaultProps = {
-  isChecked: false,
 };
 
 export default Tooltip;

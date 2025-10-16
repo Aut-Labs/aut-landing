@@ -34,12 +34,8 @@ const StyledDynamicComponent = styled("p")`
   ${textAlign}
 `;
 
-const DynamicComponent = ({ children, ...props }) => {
-  return <StyledDynamicComponent {...props}>{children}</StyledDynamicComponent>;
-};
-
-DynamicComponent.defaultProps = {
-  as: "p",
+const DynamicComponent = ({ children, as = "p", ...props }) => {
+  return <StyledDynamicComponent as={as} {...props}>{children}</StyledDynamicComponent>;
 };
 
 export default DynamicComponent;

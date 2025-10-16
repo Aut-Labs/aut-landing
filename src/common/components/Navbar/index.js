@@ -79,6 +79,4 @@ Navbar.propTypes = {
 };
 
 /** Navbar default proptype */
-Navbar.defaultProps = {};
-
 export default Navbar;

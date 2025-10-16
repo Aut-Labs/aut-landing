@@ -5,13 +5,13 @@ import InputField, { EyeButton } from "./input.style";
 const Input = ({
   label,
   value,
-  onBlur,
-  onFocus,
+  onBlur = () => {},
+  onFocus = () => {},
   onChange,
-  inputType,
-  isMaterial,
+  inputType = "text",
+  isMaterial = false,
   icon,
-  iconPosition,
+  iconPosition = "left",
   passwordShowHide,
   className,
   defaultValue,
@@ -225,13 +225,4 @@ Input.propTypes = {
 };
 
 /** Inout default type. */
-Input.defaultProps = {
-  inputType: "text",
-  isMaterial: false,
-  iconPosition: "left",
-  onBlur: () => {},
-  onFocus: () => {},
-  onChange: () => {},
-};
-
 export default Input;

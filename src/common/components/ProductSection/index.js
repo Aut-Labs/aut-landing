@@ -14,7 +14,7 @@ const ProductSection = ({
   title,
   button,
   description,
-  iconPosition,
+  iconPosition = "top",
   additionalContent,
   wrapperStyle,
   iconStyle,
@@ -109,10 +109,6 @@ ProductSection.propTypes = {
   /** btnWrapperStyle prop contain these style system props: display, space, alignItems,
    * flexDirection and justifyContent. */
   btnWrapperStyle: PropTypes.object,
-};
-
-ProductSection.defaultProps = {
-  iconPosition: "top",
 };
 
 export default ProductSection;

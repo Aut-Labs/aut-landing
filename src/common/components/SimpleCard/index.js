@@ -12,7 +12,7 @@ const SimpleCard = ({
   title,
   button,
   description,
-  iconPosition,
+  iconPosition = "top",
   additionalContent,
   wrapperStyle,
   iconStyle,
@@ -95,10 +95,6 @@ SimpleCard.propTypes = {
   /** btnWrapperStyle prop contain these style system props: display, space, alignItems,
    * flexDirection and justifyContent. */
   btnWrapperStyle: PropTypes.object,
-};
-
-SimpleCard.defaultProps = {
-  iconPosition: "top",
 };
 
 export default SimpleCard;

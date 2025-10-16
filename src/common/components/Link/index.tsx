@@ -10,17 +10,12 @@ const LinkWrapper = styled(NextLink)(
   themed('Link')
 );
 
-const Link = ({ children, alignItems, ...props }: any) => (
-  <LinkWrapper {...props}>{children}</LinkWrapper>
+const Link = ({ children, alignItems, m = 0, display = 'inline-flex', ...props }: any) => (
+  <LinkWrapper m={m} display={display} {...props}>{children}</LinkWrapper>
 );
 
 export default Link;
 
 Link.propTypes = {
   children: PropTypes.any.isRequired,
-};
-
-Link.defaultProps = {
-  m: 0,
-  display: 'inline-flex',
 };

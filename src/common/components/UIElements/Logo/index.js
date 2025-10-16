@@ -40,7 +40,17 @@ const StyledImage = styled(Image)`
 const Logo = forwardRef(
   (
     {
-      logoWrapperStyle,
+      logoWrapperStyle = {
+        display: "inline-flex",
+        alignItems: "center",
+        mr: "1rem",
+        "a:hover": {
+          textDecoration: "none",
+        },
+        "a:focus": {
+          textDecoration: "none",
+        }
+      },
       logoStyle,
       withAnchor,
       anchorProps,
@@ -69,17 +79,4 @@ Logo.propTypes = {
   anchorProps: PropTypes.object,
 };
 
-Logo.defaultProps = {
-  logoWrapperStyle: {
-    display: "inline-flex",
-    alignItems: "center",
-    mr: "1rem",
-    "a:hover": {
-      textDecoration: "none",
-    },
-    "a:focus": {
-      textDecoration: "none",
-    }
-  },
-};
 export default Logo;

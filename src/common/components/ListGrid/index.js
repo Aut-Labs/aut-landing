@@ -57,9 +57,21 @@ const ListGrid = ({
   buttonText,
   buttonVariant,
   loaderColor,
-  componentWrapperStyle,
-  componentContainerStyle,
-  loadMoreWrapperStyle,
+  componentWrapperStyle = {
+    flexBox: true,
+    flexWrap: 'wrap',
+    mr: '-1rem',
+    ml: '-1rem',
+  },
+  componentContainerStyle = {
+    pr: '1rem',
+    pl: '1rem',
+  },
+  loadMoreWrapperStyle = {
+    flexBox: true,
+    justifyContent: 'center',
+    mt: '1rem',
+  },
   loadMoreButtonStyle,
   paginationWrapperStyle,
   className,
@@ -143,24 +155,6 @@ ListGrid.propTypes = {
   loadMoreWrapperStyle: PropTypes.object,
   loadMoreStyle: PropTypes.object,
   paginationWrapperStyle: PropTypes.object,
-};
-
-ListGrid.defaultProps = {
-  componentWrapperStyle: {
-    flexBox: true,
-    flexWrap: 'wrap',
-    mr: '-1rem',
-    ml: '-1rem',
-  },
-  componentContainerStyle: {
-    pr: '1rem',
-    pl: '1rem',
-  },
-  loadMoreWrapperStyle: {
-    flexBox: true,
-    justifyContent: 'center',
-    mt: '1rem',
-  },
 };
 
 export default ListGrid;

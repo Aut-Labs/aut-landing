@@ -33,6 +33,4 @@ Loader.propTypes = {
   loaderColor: PropTypes.string,
 };
 
-Loader.defaultProps = {};
-
 export default Loader;

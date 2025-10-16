@@ -6,16 +6,16 @@ import Loader from "../Loader";
 const Button = forwardRef(
   (
     {
-      type,
+      type = "button",
       title,
       icon,
-      disabled,
+      disabled = false,
       iconPosition,
       onClick,
       loader,
       loaderColor,
-      isMaterial,
-      isLoading,
+      isMaterial = false,
+      isLoading = false,
       className,
       ...props
     }: any,
@@ -138,13 +138,6 @@ Button.propTypes = {
    * Gets called when the user clicks on the button
    */
   onClick: PropTypes.func,
-};
-
-Button.defaultProps = {
-  disabled: false,
-  isMaterial: false,
-  isLoading: false,
-  type: "button",
 };
 
 export default Button;

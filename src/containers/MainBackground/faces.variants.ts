@@ -14,12 +14,12 @@ export const faceOneMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
@@ -42,12 +42,12 @@ export const faceTwoMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
@@ -70,12 +70,12 @@ export const faceThreeMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
@@ -98,12 +98,12 @@ export const faceFourMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
@@ -126,12 +126,12 @@ export const faceFiveMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
@@ -154,12 +154,12 @@ export const faceSixMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
@@ -182,12 +182,12 @@ export const faceSevenMovementVariant = {
     scale: 0.6,
     transition: {
       y: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 200,
         damping: 15,
       },

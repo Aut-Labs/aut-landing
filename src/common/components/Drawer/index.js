@@ -11,6 +11,9 @@ const Drawer = ({
   drawerHandler,
   toggleHandler,
   open,
+  width = '300px',
+  handler = false,
+  level = null,
   ...props
 }) => {
   // Add all classs to an array
@@ -71,12 +74,6 @@ Drawer.propTypes = {
   /** drawerHandler could be button, icon, string or any component */
   // drawerHandler: PropTypes.element.isRequired
   drawerHandler: PropTypes.element,
-};
-
-Drawer.defaultProps = {
-  width: '300px',
-  handler: false,
-  level: null,
 };
 
 export default Drawer;

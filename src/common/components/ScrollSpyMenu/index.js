@@ -8,7 +8,7 @@ import { DrawerContext } from "../../contexts/DrawerContext";
 import Button from "../Button";
 import Link from "../Link";
 
-const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
+const ScrollSpyMenu = ({ className, menuItems, drawerClose, componentTag = "ul", currentClassName = "is-current", ...props }) => {
   const { dispatch } = useContext(DrawerContext);
   const router = useRouter();
   // empty array for scrollspy items
@@ -39,6 +39,8 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       items={scrollItems}
       className={addAllClasses.join(" ")}
       drawerClose={drawerClose}
+      componentTag={componentTag}
+      currentClassName={currentClassName}
       {...props}
     >
       {menuItems.map((menu, index) => (
@@ -124,11 +126,6 @@ ScrollSpyMenu.propTypes = {
    * Function to be executed when the active item has been updated [optional].
    */
   onUpdate: PropTypes.func,
-};
-
-ScrollSpyMenu.defaultProps = {
-  componentTag: "ul",
-  currentClassName: "is-current",
 };
 
 export default ScrollSpyMenu;
