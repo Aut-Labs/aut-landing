@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="530" height="306" viewBox="0 0 530 306">
+  <defs>
+    <filter id="Rectangle_290" x="0" y="0" width="530" height="306" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.443"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_290-2" x="0" y="0" width="530" height="306" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#00ceff" flood-opacity="0.796" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#009fe3"/>
+      <stop offset="0.08" stop-color="#0399de"/>
+      <stop offset="0.19" stop-color="#0e8bd3"/>
+      <stop offset="0.3" stop-color="#2072bf"/>
+      <stop offset="0.41" stop-color="#3a50a4"/>
+      <stop offset="0.53" stop-color="#5a2583"/>
+      <stop offset="0.71" stop-color="#453f94"/>
+      <stop offset="0.88" stop-color="#38519f"/>
+      <stop offset="1" stop-color="#3458a4"/>
+    </linearGradient>
+    <filter id="set_your_own_rules." x="147.362" y="128.128" width="228" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12744" data-name="Group 12744" transform="translate(6.075 6.004)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -6.08, -6)" filter="url(#Rectangle_290)">
+        <rect id="Rectangle_290-3" data-name="Rectangle 290" width="512" height="288" transform="translate(6 6)" fill="#020202"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -6.08, -6)" filter="url(#Rectangle_290-2)">
+        <rect id="Rectangle_290-4" data-name="Rectangle 290" width="512" height="288" transform="translate(6 6)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_12409" data-name="Group 12409" transform="translate(32.768 37.743)">
+      <g id="Group_12408" data-name="Group 12408" transform="translate(0 0)">
+        <g id="Layer_1" data-name="Layer 1" transform="translate(444.015 0) rotate(65)">
+          <g id="Group_4" data-name="Group 4">
+            <path id="Path_10" data-name="Path 10" d="M0,0,3.931,144.651,5.615,319.342,3.931,489.916Z" fill="#bfbfbf"/>
+            <path id="Path_11" data-name="Path 11" d="M0,0,2.419,103.968v67.7l1.507,87.949v230.3L0,321.575V0Z" transform="translate(0.844 0)" fill="url(#linear-gradient)"/>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -38.84, -43.75)" filter="url(#set_your_own_rules.)">
+          <text id="set_your_own_rules.-2" data-name="set your own rules." transform="translate(255.36 156.13)" fill="#fff" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.15em"><tspan x="-98.871" y="0">set your own rules.</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  autos_landing:
+    container_name: autos_landing
+    build: ./
+    image: autos_landing
+    networks:
+      - aut_landing_test2
+
+  autos_landing_nginx:
+    container_name: autos_landing_nginx
+    build: ./nginx
+    image: autos_landing_nginx
+    ports:
+      - "3001:9080"
+    depends_on:
+      - autos_landing
+    networks:
+      - aut_landing_test2
+
+networks:
+  aut_landing_test2:
+    driver: bridge

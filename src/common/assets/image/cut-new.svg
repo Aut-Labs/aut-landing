@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1669.37 1669.37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #14ecec;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_160);
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_160" data-name="Degradado sin nombre 160" cx="4066.86" cy="5520.67" fx="4066.86" fy="5520.67" r="1" gradientTransform="translate(6487267.23 -1472770.12) rotate(-135) scale(871.54 -1019.55)" gradientUnits="userSpaceOnUse">
+      <stop offset=".02" stop-color="#14ecec"/>
+      <stop offset="1" stop-color="#192afc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-4" dy="-6"/>
+      <feGaussianBlur result="blur" stdDeviation="6"/>
+      <feFlood flood-color="#14ecec" flood-opacity=".3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Cut">
+    <path class="cls-2" d="M1669.37,227.51c-80.93-80.93-179.71-142.42-290.71-180.96C1267.66,8.01,1146.61-6.83,1022.44,2.89c-124.17,9.72-249.04,43.8-367.47,100.3-118.44,56.5-228.12,134.3-322.8,228.98-94.67,94.67-172.48,204.36-228.98,322.8C46.69,773.4,12.61,898.27,2.89,1022.44c-9.72,124.17,5.11,245.21,43.65,356.21,38.54,111,100.03,209.79,180.96,290.72L1669.37,227.51Z"/>
+    <path class="cls-1" d="M385.03,1511.73L1510.38,386.39c-188.59,164.99-376.42,353.88-573.13,550.59-196.72,196.72-387.23,386.17-552.22,574.75Z"/>
+  </g>
+</svg>

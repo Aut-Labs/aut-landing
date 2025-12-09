@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1601">
+  <defs>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="100"/>
+      <feFlood flood-color="#192afc" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="100"/>
+      <feFlood flood-color="#14ecec" flood-opacity="1"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="Degradado_sin_nombre_135" data-name="Degradado sin nombre 135" cx="1893.71" cy="5469.23" fx="1893.71" fy="5469.23" r="1" gradientTransform="translate(-2587174.95 1257544.56) rotate(45) scale(497.08 -497.08)" gradientUnits="userSpaceOnUse">
+      <stop offset=".79" stop-color="#192afc" stop-opacity="0"/>
+      <stop offset="1" stop-color="#14ecec"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_139" data-name="Degradado sin nombre 139" cx="1890.98" cy="5470.06" fx="1890.98" fy="5470.06" r="1" gradientTransform="translate(-1881718.64 916116.42) rotate(45) scale(361.67 -361.67)" gradientUnits="userSpaceOnUse">
+      <stop offset=".71" stop-color="#192afc" stop-opacity="0"/>
+      <stop offset=".99" stop-color="#14ecec"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_143" data-name="Degradado sin nombre 143" cx="1884.88" cy="5471.93" fx="1884.88" fy="5471.93" r="1" gradientTransform="translate(-1168495.55 570927.28) rotate(45) scale(224.78 -224.78)" gradientUnits="userSpaceOnUse">
+      <stop offset=".63" stop-color="#192afc" stop-opacity="0"/>
+      <stop offset="1" stop-color="#14ecec"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_147" data-name="Degradado sin nombre 147" cx="1865.08" cy="5477.98" fx="1865.08" fy="5477.98" r="1" gradientTransform="translate(-522944.76 258490.51) rotate(45) scale(100.87 -100.87)" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#192afc" stop-opacity="0"/>
+      <stop offset=".96" stop-color="#14ecec"/>
+    </radialGradient>
+  </defs>
+  <g id="Circles">
+    <circle cx="800" cy="800.29" r="500" fill="#262626" filter="url(#outer-glow-1)"/>
+    <circle cx="800" cy="800.29" r="500" fill="#262626" filter="url(#outer-glow-2)"/>
+    <circle cx="800" cy="800.29" r="500" fill="url(#Degradado_sin_nombre_135)"/>
+    <circle cx="800" cy="800.29" r="361.74" fill="url(#Degradado_sin_nombre_139)"/>
+    <circle cx="800" cy="800.29" r="225.08" fill="url(#Degradado_sin_nombre_143)"/>
+    <circle cx="800" cy="800.29" r="104.5" fill="url(#Degradado_sin_nombre_147)"/>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    --color-primary: #1bbbff;
+    --color-secondary: #112BB3;
+    --color-heading: #f5f5f7;
+    --color-text: #EBEBF2;
+    --color-background: #262626;
+
+    font-size: 62.5%;
+  }
+}
+
+@layer utilities {
+  /* This two helpers apply a -50% to the translate x/y, and add
+   * a --y/--x css variable to it. This util is only here to make writing this class
+   * a bit easier to read in the HTML :)   */
+  .translate-y-centered-offset {
+    @apply translate-y-[calc(-50%_+_var(--y))];
+  }
+  .translate-x-centered-offset {
+    @apply translate-x-[calc(-50%_+_var(--x))];
+  }
+}
+
+html {
+  background-color: #0f1319;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+html.scrollable {
+  overflow: auto;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.snap-parent-y-mandatory {
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-parent-y-proximity {
+  scroll-snap-type: y proximity;
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-child-start {
+  opacity: 0.5;
+  z-index: 10;
+  scroll-snap-align: start;
+  flex: none;
+}
+
+.snap-child-center {
+  opacity: 0.5;
+  z-index: 10;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+/* html:after {
+  content: " ";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: transparent url("/bg_2.svg") 0% 0% no-repeat padding-box;
+  mix-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+} */
+
+.with-network {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: transparent url("/common/assets/image/map.png") 0% 0% no-repeat
+    padding-box;
+  mix-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes slideArrow {
+  0%, 100% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  30%, 70% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+#arrow {
+  animation: slideArrow 3s ease-in-out infinite;
+}
