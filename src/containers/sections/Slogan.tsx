@@ -14,11 +14,8 @@ import { DrawerContext } from "common/contexts/DrawerContext";
 import React from "react";
 import { AutFeaturesContext } from "./AutFeatures";
 import { useDeviceSize } from "common/utils/use-device-size";
-import { marginBottom } from "styled-system";
 
-const SloganEl = styled<any>(motion.div)`
-  ${marginBottom}
-`;
+const SloganEl = styled<any>(motion.div)``;
 
 // export const sloganAnimationOrder = {
 //   initial: 0,
@@ -317,8 +314,8 @@ const Slogan = () => {
     ],
     [0, 0, 0, 1, 1, 0]
   );
-  
-  
+
+
   const interactionOpacity = useTransform(
     scrollYProgress,
     [
@@ -329,8 +326,8 @@ const Slogan = () => {
     ],
     [0, 1, 1, 0]
   );
-  
-  
+
+
 
   const finalTextOpacity = useTransform(featuresScrollY, [0, 0.3], [1, 0]);
 
@@ -538,20 +535,20 @@ const Slogan = () => {
               <Typography
                 color="white"
                 as="subtitle1"
-                 marginTop="2rem"
+                marginTop="2rem"
                 textAlign="left"
                 p={{
                   _: "0px 10px",
                   md: "0px",
                 }}
               >
-              based on the on-chain actions
-              <br />
-              that you two share. 
+                based on the on-chain actions
+                <br />
+                that you two share.
               </Typography>
             </motion.div>
-          
-         
+
+
           </div>
         </div>
         <div
@@ -561,7 +558,7 @@ const Slogan = () => {
           }}
         >
           <div className="flex flex-col">
-         
+
             <motion.div
               style={stylesWithCssVar({
                 opacity: interactionOpacity,
@@ -576,9 +573,9 @@ const Slogan = () => {
                   md: "0px",
                 }}
               >
-             Unlock the true potential
-             <br />
-             of your on-chain activity
+                Unlock the true potential
+                <br />
+                of your on-chain activity
               </Typography>
               <Typography
                 color="white"
@@ -590,11 +587,11 @@ const Slogan = () => {
                   md: "0px",
                 }}
               >
-              through the first        <br />Reputation Framework        <br />based on Participation.
-       
+                through the first        <br />Reputation Framework        <br />based on Participation.
+
               </Typography>
             </motion.div>
-          
+
           </div>
         </div>
 
@@ -628,11 +625,11 @@ const Slogan = () => {
               <br />
               <br />
               The more value you bring, the  <br /> more value you receive.
-              <br /> 
-              <br /> 
-              It’s that simple.         
+              <br />
+              <br />
+              It’s that simple.
             </Typography>
-         
+
           </motion.div>
         </motion.div>
       </div>
